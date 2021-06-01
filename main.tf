@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+provider "aws" {
+  region  = "us-west-2"
+  version = "~> 3.0"
+}
+
 data "aws_caller_identity" "current" {}
 
 output "account_id" {
