@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+# necessary if AWS_DEFAULT_REGION missing from environment variables.
 provider "aws" {
   region  = "us-west-2"
 }
